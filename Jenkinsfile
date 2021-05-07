@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'lan:10000/base:latest'
-    }
-
-  }
+  agent any
   stages {
     stage('error') {
       steps {
